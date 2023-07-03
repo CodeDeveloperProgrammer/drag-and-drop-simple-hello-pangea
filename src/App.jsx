@@ -41,6 +41,7 @@ const App = () => {
   };
 
   return (
+    <div className="dng">
     <DragDropContext onDragEnd={handleDragEnd}>
       <h1>Todo drag and drop</h1>
       <Droppable droppableId="todos">
@@ -67,6 +68,7 @@ const App = () => {
         )}
       </Droppable>
     </DragDropContext>
+    </div>
   );
 };
 
